@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NaturaLink B2B | Connecting Natural Resource Suppliers</title>
+  <meta name="description" content="Platform B2B profesional yang menghubungkan pemasok sumber daya alam dengan pembeli global. Minerals, Energy, Timber, Agriculture & more.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">NaturaLink <small>B2B</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Beranda</a>
+        <a href="suppliers.html" class="nav-link" data-i18n="nav_suppliers">Pemasok</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">Tentang</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Kontak</a>
+        <a href="login.html" class="btn btn-outline" data-i18n="nav_login">Masuk</a>
+        <a href="register.html" class="btn btn-primary" data-i18n="nav_register">Daftar</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" title="Switch Language">
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 data-i18n="hero_title">Menghubungkan Pemasok Sumber Daya Alam dengan Dunia</h1>
+        <p data-i18n="hero_subtitle">Platform B2B terpercaya untuk mineral, energi, kayu, pertanian, dan sumber daya alam lainnya. Temukan mitra bisnis global dengan mudah dan aman.</p>
+        <div class="hero-cta">
+          <a href="register.html" class="btn btn-primary btn-lg" data-i18n="hero_cta1">Mulai sebagai Pemasok</a>
+          <a href="suppliers.html" class="btn btn-outline btn-lg" data-i18n="hero_cta2">Cari Pemasok</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>2.500+</strong>
+            <span data-i18n="stat_suppliers">Pemasok Terverifikasi</span>
+          </div>
+          <div class="stat">
+            <strong>48</strong>
+            <span data-i18n="stat_countries">Negara</span>
+          </div>
+          <div class="stat">
+            <strong>12</strong>
+            <span data-i18n="stat_categories">Kategori Utama</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="cat_title">Kategori Sumber Daya Alam</h2>
+        <p data-i18n="cat_subtitle">Temukan pemasok terpercaya di berbagai sektor sumber daya alam</p>
+      </div>
+      <div class="category-grid">
+        <a href="suppliers.html?cat=minerals" class="category-card">
+          <div class="cat-icon">⛏️</div>
+          <h3 data-i18n="cat_minerals">Mineral & Tambang</h3>
+          <p data-i18n="cat_minerals_desc">Batu bara, nikel, tembaga, emas, bijih besi</p>
+        </a>
+        <a href="suppliers.html?cat=energy" class="category-card">
+          <div class="cat-icon">⚡</div>
+          <h3 data-i18n="cat_energy">Energi</h3>
+          <p data-i18n="cat_energy_desc">Minyak, gas, batubara, energi terbarukan</p>
+        </a>
+        <a href="suppliers.html?cat=timber" class="category-card">
+          <div class="cat-icon">🪵</div>
+          <h3 data-i18n="cat_timber">Kayu & Hasil Hutan</h3>
+          <p data-i18n="cat_timber_desc">Kayu olahan, plywood, pulp, rotan</p>
+        </a>
+        <a href="suppliers.html?cat=agriculture" class="category-card">
+          <div class="cat-icon">🌾</div>
+          <h3 data-i18n="cat_agriculture">Pertanian & Agribisnis</h3>
+          <p data-i18n="cat_agriculture_desc">Sawit, karet, kopi, kakao, rempah</p>
+        </a>
+        <a href="suppliers.html?cat=metals" class="category-card">
+          <div class="cat-icon">🔩</div>
+          <h3 data-i18n="cat_metals">Logam & Alloy</h3>
+          <p data-i18n="cat_metals_desc">Besi, aluminium, tembaga, nikel refined</p>
+        </a>
+        <a href="suppliers.html?cat=water" class="category-card">
+          <div class="cat-icon">💧</div>
+          <h3 data-i18n="cat_water">Air & Mineral Water</h3>
+          <p data-i18n="cat_water_desc">Air minum dalam kemasan, mineral water</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="how_title">Cara Kerja Platform</h2>
+        <p data-i18n="how_subtitle">Proses sederhana untuk pemasok dan pembeli</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 data-i18n="step1_title">Daftar & Verifikasi</h3>
+          <p data-i18n="step1_desc">Buat akun perusahaan, unggah dokumen legal, dan verifikasi profil bisnis Anda.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 data-i18n="step2_title">Tampilkan Produk</h3>
+          <p data-i18n="step2_desc">Upload katalog sumber daya alam yang Anda pasok lengkap dengan spesifikasi dan kapasitas.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 data-i18n="step3_title">Terima Inquiry</h3>
+          <p data-i18n="step3_desc">Pembeli global dapat mengirim permintaan penawaran secara langsung melalui platform.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3 data-i18n="step4_title">Deal & Transaksi</h3>
+          <p data-i18n="step4_desc">Negosiasi, kontrak, dan transaksi dilakukan dengan dukungan platform yang aman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 data-i18n="cta_title">Siap Mengembangkan Bisnis Sumber Daya Alam Anda?</h2>
+        <p data-i18n="cta_subtitle">Bergabunglah dengan ribuan pemasok dan pembeli yang sudah terhubung di NaturaLink B2B.</p>
+        <a href="register.html" class="btn btn-primary btn-lg" data-i18n="cta_button">Daftar Sekarang — Gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🌿</span>
+            <span class="logo-text">NaturaLink <small>B2B</small></span>
+          </div>
+          <p data-i18n="footer_desc">Platform B2B terpercaya yang menghubungkan pemasok sumber daya alam dengan pembeli di seluruh dunia.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_company">Perusahaan</h4>
+          <a href="about.html" data-i18n="nav_about">Tentang</a>
+          <a href="contact.html" data-i18n="nav_contact">Kontak</a>
+          <a href="#" data-i18n="footer_privacy">Privasi</a>
+          <a href="#" data-i18n="footer_terms">Syarat & Ketentuan</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_resources">Sumber Daya</h4>
+          <a href="suppliers.html" data-i18n="nav_suppliers">Direktori Pemasok</a>
+          <a href="#" data-i18n="footer_blog">Blog</a>
+          <a href="#" data-i18n="footer_help">Pusat Bantuan</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_contact">Kontak</h4>
+          <p>Email: support@naturalink.b2b</p>
+          <p>WhatsApp: +62 812-3456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NaturaLink B2B. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
