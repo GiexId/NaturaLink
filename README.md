@@ -1,4 +1,4 @@
-# NaturaLink B2B — Prototype Website
+# NaturaLink B2B — Prototype Website Powered by AGroup 
 
 Website B2B profesional untuk **pemasok sumber daya alam** (Natural Resources Suppliers).
 
@@ -67,10 +67,7 @@ naturalink-b2b/
 1. Ganti nama "NaturaLink" sesuai merek kamu
 2. Ganti nomor WhatsApp & email di footer
 3. Tambah logo perusahaan
-4. Putuskan apakah mau pakai no-code (Bubble) atau Supabase
+4. Bebas mau pakai no-code (Bubble) atau Supabase
 5. Setelah live, daftarkan domain (bisa beli di Niagahoster / Rumahweb / Cloudflare)
 
 ---
-
-Dibuat sebagai prototype untuk kamu.  
-Kalau butuh penyesuaian (tambah halaman, ubah warna, tambah fitur, ganti nama, dll) tinggal bilang.
