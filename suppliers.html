@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direktori Pemasok | NaturaLink B2B</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">NaturaLink <small>B2B</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Beranda</a>
+        <a href="suppliers.html" class="nav-link active" data-i18n="nav_suppliers">Pemasok</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">Tentang</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Kontak</a>
+        <a href="login.html" class="btn btn-outline" data-i18n="nav_login">Masuk</a>
+        <a href="register.html" class="btn btn-primary" data-i18n="nav_register">Daftar</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle"><span id="langLabel">EN</span></button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="suppliers_title">Direktori Pemasok Sumber Daya Alam</h1>
+      <p data-i18n="suppliers_subtitle">Temukan dan hubungi pemasok terverifikasi dari seluruh dunia</p>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="container filter-inner">
+      <select id="filterCategory">
+        <option value="" data-i18n="filter_category">Semua Kategori</option>
+        <option value="minerals">Mineral & Tambang</option>
+        <option value="energy">Energi</option>
+        <option value="timber">Kayu & Hasil Hutan</option>
+        <option value="agriculture">Pertanian</option>
+        <option value="metals">Logam</option>
+      </select>
+      <select id="filterCountry">
+        <option value="" data-i18n="filter_country">Semua Negara</option>
+        <option value="id">Indonesia</option>
+        <option value="my">Malaysia</option>
+        <option value="au">Australia</option>
+        <option value="cn">China</option>
+        <option value="br">Brazil</option>
+      </select>
+      <input type="text" id="searchInput" data-i18n-placeholder="search_placeholder" placeholder="Cari pemasok atau produk...">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="supplier-grid" id="supplierGrid">
+      <!-- Sample suppliers -->
+      <div class="supplier-card" data-cat="minerals" data-country="id">
+        <div class="supplier-header">
+          <div class="supplier-avatar">⛏️</div>
+          <div class="supplier-info">
+            <h3>PT Nikel Nusantara</h3>
+            <div class="location">Sulawesi, Indonesia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Mineral</span>
+          <span class="badge">Verified</span>
+        </div>
+        <p class="supplier-desc">Pemasok nikel laterite dan feronikel dengan kapasitas 500.000 ton/tahun. Bersertifikat ISO & proper AMDAL.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+
+      <div class="supplier-card" data-cat="agriculture" data-country="id">
+        <div class="supplier-header">
+          <div class="supplier-avatar">🌴</div>
+          <div class="supplier-info">
+            <h3>PT Sawit Sejahtera</h3>
+            <div class="location">Riau, Indonesia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Agriculture</span>
+          <span class="badge">RSPO</span>
+        </div>
+        <p class="supplier-desc">Produsen CPO dan PKO berkelanjutan. Kapasitas 1,2 juta ton/tahun. Sertifikasi RSPO & ISPO.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+
+      <div class="supplier-card" data-cat="timber" data-country="id">
+        <div class="supplier-header">
+          <div class="supplier-avatar">🪵</div>
+          <div class="supplier-info">
+            <h3>CV Kayu Lestari</h3>
+            <div class="location">Kalimantan, Indonesia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Timber</span>
+          <span class="badge">FSC</span>
+        </div>
+        <p class="supplier-desc">Plywood, veneer, dan kayu olahan bersertifikat FSC. Fokus pada pengelolaan hutan berkelanjutan.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+
+      <div class="supplier-card" data-cat="energy" data-country="id">
+        <div class="supplier-header">
+          <div class="supplier-avatar">⚡</div>
+          <div class="supplier-info">
+            <h3>PT Energi Batubara Prima</h3>
+            <div class="location">Kalimantan Timur, Indonesia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Energy</span>
+          <span class="badge">Verified</span>
+        </div>
+        <p class="supplier-desc">Batubara thermal grade dengan kalori 5.500–6.500 kcal. Kapasitas ekspor 3 juta ton/tahun.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+
+      <div class="supplier-card" data-cat="metals" data-country="au">
+        <div class="supplier-header">
+          <div class="supplier-avatar">🔩</div>
+          <div class="supplier-info">
+            <h3>Aussie Metals Trading</h3>
+            <div class="location">Western Australia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Metals</span>
+          <span class="badge">Verified</span>
+        </div>
+        <p class="supplier-desc">Iron ore and copper concentrate exporter. Strong logistics network to Asia Pacific markets.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+
+      <div class="supplier-card" data-cat="agriculture" data-country="id">
+        <div class="supplier-header">
+          <div class="supplier-avatar">☕</div>
+          <div class="supplier-info">
+            <h3>Kopi Nusantara Export</h3>
+            <div class="location">Aceh & Toraja, Indonesia</div>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <span class="badge">Agriculture</span>
+          <span class="badge">Organic</span>
+        </div>
+        <p class="supplier-desc">Specialty coffee beans (Gayo, Toraja, Java). Direct trade with farmers. Organic certified.</p>
+        <div class="supplier-actions">
+          <a href="#" class="btn btn-primary btn-sm" data-i18n="contact_supplier">Hubungi</a>
+          <a href="#" class="btn btn-outline btn-sm" data-i18n="view_profile">Lihat Profil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 NaturaLink B2B. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

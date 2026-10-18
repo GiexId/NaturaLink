@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar | NaturaLink B2B</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">NaturaLink <small>B2B</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle"><span id="langLabel">EN</span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="auth-page">
+    <div class="auth-card">
+      <h1 data-i18n="register_title">Daftar sebagai Pemasok / Pembeli</h1>
+      <p class="subtitle" data-i18n="register_subtitle">Buat akun perusahaan gratis dalam beberapa menit</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="company" data-i18n="company_label">Nama Perusahaan</label>
+          <input type="text" id="company" required placeholder="PT Sumber Daya Alam">
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="email_label">Email Perusahaan</label>
+          <input type="email" id="email" required placeholder="nama@perusahaan.com">
+        </div>
+        <div class="form-group">
+          <label for="password" data-i18n="password_label">Kata Sandi</label>
+          <input type="password" id="password" required placeholder="••••••••" minlength="6">
+        </div>
+        <div class="form-group">
+          <label for="role" data-i18n="role_label">Saya adalah</label>
+          <select id="role" required>
+            <option value="supplier" data-i18n="role_supplier">Pemasok (Supplier)</option>
+            <option value="buyer" data-i18n="role_buyer">Pembeli (Buyer)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="register_button">Buat Akun</button>
+      </form>
+
+      <p class="form-footer">
+        <span data-i18n="have_account">Sudah punya akun?</span>
+        <a href="login.html" data-i18n="login_link">Masuk di sini</a>
+      </p>
+
+      <div class="auth-note" data-i18n="auth_note">
+        Ini adalah prototype. Untuk login & database sungguhan, hubungkan dengan Supabase atau Bubble.
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

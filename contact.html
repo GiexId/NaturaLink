@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | NaturaLink B2B</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">NaturaLink <small>B2B</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Beranda</a>
+        <a href="suppliers.html" class="nav-link" data-i18n="nav_suppliers">Pemasok</a>
+        <a href="about.html" class="nav-link" data-i18n="nav_about">Tentang</a>
+        <a href="contact.html" class="nav-link active" data-i18n="nav_contact">Kontak</a>
+        <a href="login.html" class="btn btn-outline" data-i18n="nav_login">Masuk</a>
+        <a href="register.html" class="btn btn-primary" data-i18n="nav_register">Daftar</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle"><span id="langLabel">EN</span></button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="contact_title">Hubungi Kami</h1>
+      <p data-i18n="contact_lead">Tim kami siap membantu Anda. Silakan isi formulir atau hubungi langsung.</p>
+    </div>
+  </section>
+
+  <div class="container content-page">
+    <div class="content-grid">
+      <div class="contact-form">
+        <form onsubmit="event.preventDefault(); alert(currentLang === 'id' ? 'Pesan terkirim! (Prototype)' : 'Message sent! (Prototype)');">
+          <div class="form-group">
+            <label data-i18n="name_label">Nama Lengkap</label>
+            <input type="text" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="email_label">Email Perusahaan</label>
+            <input type="email" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="company_label">Nama Perusahaan</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label data-i18n="message_label">Pesan</label>
+            <textarea rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="send_button">Kirim Pesan</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="info-box" style="margin-bottom: 24px;">
+          <h3>Email</h3>
+          <p>support@naturalink.b2b</p>
+          <p>partnership@naturalink.b2b</p>
+        </div>
+        <div class="info-box" style="margin-bottom: 24px;">
+          <h3>WhatsApp</h3>
+          <p>+62 812-3456-7890</p>
+        </div>
+        <div class="info-box">
+          <h3>Alamat</h3>
+          <p>Jakarta, Indonesia<br>(Virtual Office)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 NaturaLink B2B. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
